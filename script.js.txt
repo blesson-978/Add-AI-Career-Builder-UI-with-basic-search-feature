@@ -1,0 +1,13 @@
+function generatePlan() {
+  const career = document.getElementById('careerInput').value;
+  const output = document.getElementById('output');
+  if (career.trim() === '') {
+    output.innerHTML = 'Please enter a career to get started.';
+    return;
+  }
+  output.innerHTML = `Great choice! Here's a plan to become a successful ${career}:<br>
+  1. Learn fundamentals<br>
+  2. Build real-world projects<br>
+  3. Apply to jobs/internships<br>
+  4. Grow with continuous learning`;
+}
